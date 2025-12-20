@@ -1,4 +1,4 @@
-﻿/* <- BASE GAME LAYERS | v1.25.1
+﻿/* <- BASE GAME LAYERS | v1.42.0
 * 0: Default
 * 1: TransparentFX
 * 2: Ignore Raycast
@@ -16,7 +16,7 @@
 * 14: Environment
 * 15: GrabPassTexture1
 * 16: CutEffectParticles
-* 17: 
+* 17: ScreenDisplacement
 * 18: 
 * 19: NonReflectedParticles
 * 20: EnvironmentPhysics
@@ -42,7 +42,7 @@ namespace CameraUtils.Core {
         Water = 4,
         UI = 5,
         FirstPerson = 6, //<----------- Not used in Vanilla
-        Layer7 = 7, //<----------- Not used in Vanilla
+        HmdOnly = 7, //<----------- Not used in Vanilla
         Note = 8,
         NoteDebris = 9,
         Avatar = 10,
@@ -52,7 +52,7 @@ namespace CameraUtils.Core {
         Environment = 14,
         GrabPassTexture1 = 15,
         CutEffectParticles = 16,
-        HmdOnly = 17, //<----------- Not used in Vanilla
+        ScreenDisplacement = 17, //<----------- !!! Since 1.42.0 !!!
         DesktopOnly = 18, //<----------- Not used in Vanilla
         NonReflectedParticles = 19,
         EnvironmentPhysics = 20,
