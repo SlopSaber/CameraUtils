@@ -11,7 +11,7 @@ namespace CameraUtils.Behaviours {
         private IEnumerator RegisterCoroutine() {
             yield return new WaitForEndOfFrame();
 
-            foreach (var camera in FindObjectsOfType<Camera>()) {
+            foreach (var camera in FindObjectsByType<Camera>(FindObjectsSortMode.InstanceID)) {
                 VisibilityUtils.UpdateCameraIfKnown(camera);
                 UpdateReplayCamera(camera);
             }
